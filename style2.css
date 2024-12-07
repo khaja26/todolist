@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .menu {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+header .menu button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+header .menu ul {
+    list-style: none;
+    background-color: #333;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header .menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+header .menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+header .menu ul li a:hover {
+    background-color: #575757;
+}
+
+header .menu .hidden {
+    display: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#taskContainer {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #ddd;
+}
+
+h1 {
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px;    /* Adds space from the top of the page */
+}
+
+/* Header Styling */
+header {
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100px; /* Adjust height as needed */
+    background-color: #f4f4f4; /* Optional: light background color */
+    border-bottom: 2px solid #ddd; /* Optional: subtle border at the bottom */
+}
+
+/* H1 Styling */
+header h1 {
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    font-size: 2rem; /* Adjust font size as needed */
+    color: #333; /* Dark text color for contrast */
+    margin: 0; /* Removes default margin */
+    text-align: center; /* Ensures text alignment */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
+}
+
+

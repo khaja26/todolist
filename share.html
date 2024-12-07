@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Task</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <center><h1>Share Task</h1></center>
+        <div class="menu">
+            <button onclick="toggleMenu()">⋮</button>
+            <ul id="menuList" class="hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add.html">Add Task</a></li>
+                <li><a href="edit.html">Edit Task</a></li>
+                <li><a href="delete.html">Delete Task</a></li>
+                <li><a href="show.html">Show All Tasks</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <form id="shareForm">
+            <label for="shareDate">Select Date:</label>
+            <input type="date" id="shareDate" required />
+            <button type="button" onclick="fetchRecords()">View Records</button>
+        </form>
+
+        <h2>Records for Selected Date:</h2>
+        <div id="recordContainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="recordTableBody">
+                    <!-- Records will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <button id="shareDataButton" onclick="shareData()" disabled>Share Data</button>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+    <script src="share.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+          <h1>Add Task</h1>        
+    </header>
+
+    <main>
+        <form id="taskForm">
+            <div>
+             <label for="taskInput">Task:</label>
+            <input type="text" id="taskInput" required /> <br>
+
+             <label for="taskDate">Date:</label>
+            <input type="date" id="taskDate" required /> <br>
+
+             <label for="taskTime">Time:</label>
+            <input type="time" id="taskTime" required /> <br>
+
+            <center><button type="button" onclick="submitTask()">Submit</button></center>
+      </div>
+        </form>
+
+        <h2>Added Tasks:</h2>
+        <div id="taskContainer">
+            <center><table>
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="taskTableBody">
+                    <!-- Tasks will be dynamically added here -->
+                </tbody>
+            </table></center>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+    <script src="add.js"></script>
+</body>
+</html>
